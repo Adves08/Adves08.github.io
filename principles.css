@@ -12,7 +12,7 @@
 }
 
 .snowflakes {
-  font-size: 20px;
+  font-size: 25px;
   font-family: Arial, sans-serif;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
@@ -23,14 +23,37 @@ h1 {
   font-size: 100px;
 }
 
-.container {
-  width: 200px;
-  height: 200px;
+h2 {
+  text-align: center;
+  color: #ffffff;
+  width: fit-content;     /* border wraps text nicely */
+  margin: 0 auto 30px;         /* centers the whole box */
+  padding: 10px 20px;
+}
+
+.pfp{
+
   display: block;
-  margin: auto;
-  display: flex;
-  justify-content: center;
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border: 5px solid red;
+  border-radius: 8px;
+  padding: 3px;
+  border-style: dashed;
   }
+
+.reindeer{
+  position: absolute;
+  left: 0%;               /* distance from left edge */
+  top: 50%;                /* roughly middle of page */
+  transform: translateY(-70%); /* vertically center relative to itself */
+  max-width: 250px;        /* smaller than main image */
+  height: auto;
+  border-radius: 8px;
+  z-index: 0; 
+}
 
 .button {
   display: inline-block;
@@ -40,6 +63,11 @@ h1 {
   font-size: 28px;
   padding: 100px;
   width: 100%;
+  cursor: pointer;
+  position: relative;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
   cursor: pointer;
   
 }
@@ -52,11 +80,36 @@ h1 {
   transition: 0.7s;
 }
 
-.button span:after {
-  content: '\00bb';
+.Home span:after {
+  content: "🏠";
   position: absolute;
-  opacity: 0;
-  right: -40px;
+  opacity: 0  ;
+  right: 40px;
+  transition: 0.5s;
+}
+
+.About span:after {
+  content: "📝";
+  position: absolute;
+  opacity: 0  ;
+  right: 40px;
+  transition: 0.5s;
+}
+
+.Projects span:after {
+  content: "🎨";
+  position: absolute;
+  opacity: 0  ;
+  right: 40px;
+  transition: 0.5s;
+}
+
+.Achievements span:after {
+  
+  content: "🏆";
+  position: absolute;
+  opacity: 0  ;
+  right: 40px;
   transition: 0.5s;
 }
 
@@ -68,7 +121,31 @@ h1 {
   opacity: 1;
   right: 0;
 }
-.Home {background-color: #2e04aa;}
-.Projects {background-color: #2e04aa;}
-.About {color: #2e04aa;}
-.Achievements {color: #2e04aa;}
+
+.button:after {
+  content: "";
+  background: #ff1414;
+  display: block;
+  position: absolute;
+  padding-top: 400%;
+  padding-left: 400%;
+  margin-left: -200px;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 1s
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+.Achievements {background-color: #000745;
+border-left: 6px solid red;}
+.About {background-color: #000745;
+border-left: 6px solid red;}
+.Home {color: #000745;
+border-left: 6px solid red;}
+.Projects {color: #000745;
+border-left: 6px solid red;}
