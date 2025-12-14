@@ -18,30 +18,30 @@
   text-shadow: 0 0 5px rgb(255, 255, 255);
 }
 
+p{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
 h1 {
   color: white;
   text-align: center;
   font-size: 100px;
-}
-
-h2 {
-  text-align: center;
-  color: #ffffff;
-  width: fit-content;     /* border wraps text nicely */
-  margin: 0 auto 30px;         /* centers the whole box */
-  padding: 10px 20px;
+  margin-top: 0px;
 }
 
 .pfp{
 
   display: block;
-  max-width: 100px;
+  max-width: 120px;
   width: 100%;
   height: auto;
-  margin: 0 auto;
+  margin: 25px auto;
   border: 3px solid red;
   border-radius: 8px;
-  padding: 14px;
+  padding: 4px;
   border-style: dashed;
   }
 
@@ -49,8 +49,8 @@ h2 {
   position: absolute;
   left: 0%;               /* distance from left edge */
   top: 50%;                /* roughly middle of page */
-  transform: translateY(-70%); /* vertically center relative to itself */
-  max-width: 250px;        /* smaller than main image */
+  transform: translateY(-120%); /* vertically center relative to itself */
+  max-width: 120px;        /* smaller than main image */
   height: auto;
   border-radius: 8px;
   z-index: 0; 
@@ -67,7 +67,7 @@ h2 {
   border: none;
   color: white;
   text-align: center;
-  font-size: 12px;
+  font-size: 14px;
   padding: 15px;
   cursor: pointer;
   position: relative;
@@ -122,7 +122,7 @@ h2 {
 
 .Main span:after {
   
-  content: "🏆";
+  content: "🔎";
   position: absolute;
   opacity: 0  ;
   right: 40px;
@@ -158,17 +158,21 @@ h2 {
   opacity: 1;
   transition: 0s
 }
-.Achievements {background-color: #000745;
-border-left: 6px solid red;}
 
-.About {background-color: #000745;
-border-left: 6px solid red;}
-
+.Achievements {
+    background-color: #000745;
+}
+.About {
+    background-color: #000745;
+}
 .Home {
     color: #000745;
-    border-left: 6px solid red;
+    background-color: rgba(255, 255, 255, 0.626);
+    border-bottom: 6px solid red;
 }
-.Projects {color: #000745;
-border-left: 6px solid red;}
-.Main {background-color: #000745;
-border-left: 6px solid red;}
+.Projects {
+    color: #000745;
+}
+.Main {
+    background-color: #000745;
+}
