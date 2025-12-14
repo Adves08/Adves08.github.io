@@ -1,0 +1,174 @@
+@font-face {
+  font-family: 'Christmas1';
+  src: url('fonts/christmabet.woff2');
+  font-weight: normal;
+  font-size: xx-large;
+}
+
+@font-face {
+  font-family: 'Christmas2';
+  src: url('fonts/Christmas-font.woff2');
+  font-weight: normal;
+}
+
+.snowflakes {
+  color: white;
+  font-size: 25px;
+  font-family: Arial, sans-serif;
+  text-shadow: 0 0 5px rgb(255, 255, 255);
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 100px;
+}
+
+h2 {
+  text-align: center;
+  color: #ffffff;
+  width: fit-content;     /* border wraps text nicely */
+  margin: 0 auto 30px;         /* centers the whole box */
+  padding: 10px 20px;
+}
+
+.pfp{
+
+  display: block;
+  max-width: 100px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border: 3px solid red;
+  border-radius: 8px;
+  padding: 14px;
+  border-style: dashed;
+  }
+
+.reindeer{
+  position: absolute;
+  left: 0%;               /* distance from left edge */
+  top: 50%;                /* roughly middle of page */
+  transform: translateY(-70%); /* vertically center relative to itself */
+  max-width: 250px;        /* smaller than main image */
+  height: auto;
+  border-radius: 8px;
+  z-index: 0; 
+}
+
+.button-row {
+  display: flex;
+  width: 100%;
+  margin: 0;
+}
+
+.button {
+  flex: 1;                 /* each button = equal width */
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+  cursor: pointer;
+  position: relative;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+
+.button:active {
+  transform: translateY(5px);
+}
+.button span {
+  display: inline-block;
+  z-index: 2;
+  position: relative;
+  transition: 0.8s;
+}
+
+.Home span:after {
+  content: "🏠";
+  position: absolute;
+  opacity: 0  ;
+  right: 40px;
+  transition: 0.5s;
+}
+
+.About span:after {
+  content: "📝";
+  position: absolute;
+  opacity: 0  ;
+  right: 40px;
+  transition: 0.5s;
+}
+
+.Projects span:after {
+  content: "🎨";
+  position: absolute;
+  opacity: 0  ;
+  right: 40px;
+  transition: 0.5s;
+}
+
+.Achievements span:after {
+  
+  content: "🏆";
+  position: absolute;
+  opacity: 0  ;
+  right: 40px;
+  transition: 0.5s;
+}
+
+.Main span:after {
+  
+  content: "🏆";
+  position: absolute;
+  opacity: 0  ;
+  right: 40px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 45px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.button:after {
+  content: "";
+  background: #ff1414;
+  display: block;
+  position: absolute;
+  padding-top: 400%;
+  padding-left: 400%;
+  margin-left: -200px;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 1s
+
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+.Achievements {background-color: #000745;
+border-left: 6px solid red;}
+
+.About {background-color: #000745;
+border-left: 6px solid red;}
+
+.Home {
+    color: #000745;
+    border-left: 6px solid red;
+}
+.Projects {color: #000745;
+border-left: 6px solid red;}
+.Main {background-color: #000745;
+border-left: 6px solid red;}
