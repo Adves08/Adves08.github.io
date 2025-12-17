@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Main</title>
-  <link rel="stylesheet" href="main.css">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="Projects.css">
 </head>
 <body style = "background-color: #000745;">
   <style>
-/* customizable snowflake styling */
-
 
 /* General snowflake behavior */
 .snowflake,
@@ -139,23 +137,68 @@
     <div class="inner">❅</div>
   </div>
 </div>
-<h2><center>Main</center></h2>
+<div class="button-row">
+  <button class="button Main ripple-btn" data-link="index.html">
+    <span><b>Main Page</b></span>    
+  <button class="button Home ripple-btn" data-link="home.html">
+    <span><b>Home</b></span>
+  </button>
+  <button class="button About ripple-btn" data-link="About.html">
+    <span><b>About</b></span>
+  <button class="button Projects"><span><b>Projects</b></span></button>
+  <button class="button Achievements"><span><b>Achievements</b></span></button>
+  
+</div>
+
 <img src="Sevda.jpg" class="pfp">
 <img src="reindeer.png" class="reindeer">
 
 
-<button class="button Home ripple-btn" data-link="home.html">
-  <span><b>Home Page</b></span>
-</button>
+<h1>🎀 Sevda Mammadova 🎀</h1>
 
-<button class="button About ripple-btn" data-link="About.html">
-  <span><b>About</b></span>
-</button>
+<main class="projects-container">
 
-  <button class="button Projects ripple-btn" data-link="Projects.html">
-    <span><b>Projects</b></span>
-  </button>
-<button class="button Achievements" style="vertical-align:middle"><span><b>Achievements </b></span></button>
+  <!-- Hero Section -->
+  <section class="projects-hero">
+    <h1>My Projects</h1>
+    <p>Here are some of the projects I've created during my learning journey. Click any to see details!</p>
+  </section>
+
+  <!-- Projects Grid -->
+  <section class="projects-grid">
+
+    <!-- Project Card 1 -->
+    <div class="project-card">
+      <img src="project1.png" alt="Project 1 screenshot" class="project-img">
+      <h2>Project 1: [Title]</h2>
+      <p class="project-desc">
+        [Short description of Project 1. Explain what it does, what tools you used, and any highlights.]
+      </p>
+    </div>
+
+    <!-- Project Card 2 (Hour of Code) -->
+    <div class="project-card">
+      <img src="project2.png" alt="Project 2 screenshot" class="project-img">
+      <h2>Project 2: [Title]</h2>
+      <p class="project-desc">
+        [Description of Hour of Code project, what you learned, skills applied.]
+      </p>
+    </div>
+
+    <!-- Optional Additional Project -->
+    <div class="project-card">
+      <img src="project3.png" alt="Project 3 screenshot" class="project-img">
+      <h2>Project 3: [Title]</h2>
+      <p class="project-desc">
+        [Optional project description, maybe independent work or competition.]
+      </p>
+    </div>
+
+  </section>
+
+</main>
+
+
 
 
   <script src="principles.js"></script>
