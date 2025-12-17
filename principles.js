@@ -20,3 +20,4 @@ document.querySelectorAll('.ripple-btn').forEach(btn => {
     }, 400);
   });
 });
+

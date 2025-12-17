@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <title>Home Page</title>
-  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="About.css">
 </head>
 <body style = "background-color: #000745;">
   <style>
@@ -145,40 +145,58 @@
   </button>
   <button class="button About ripple-btn" data-link="About.html">
     <span><b>About</b></span>
+  </button>  
   <button class="button Projects"><span><b>Projects</b></span></button>
   <button class="button Achievements"><span><b>Achievements</b></span></button>
   
 </div>
+<main class="about-container">
 
-<img src="Sevda.jpg" class="pfp">
-<img src="reindeer.png" class="reindeer">
+  <!-- INTRO CARD -->
+  <section class="about-hero">
+    <img src="Sevda.jpg" alt="Profile photo" class="about-pfp">
+    <h1>About Me</h1>
+    <p class="about-intro">
+      <!-- Short personal background (2–3 lines) -->
+    </p>
+  </section>
 
+  <!-- BACKGROUND -->
+  <section class="about-section">
+    <h2>Background</h2>
+    <p>
+      <!-- Education, where you’re from, interests -->
+    </p>
+  </section>
 
-<h1>🎀 Sevda Mammadova 🎀</h1>
-<div class="about-box">
-  <p>
-    My name is Sevda Mammadova, and I am a 17-year-old student currently studying Computer Science at ADA School of IT. I have a strong interest in technology, problem-solving, and digital innovation, and I am continuously developing my skills through both academic projects and independent learning.
-    <br><br>
-    I was born in Qatar and lived there for 13 years, an experience that shaped my multicultural perspective and adaptability. Four years ago, I moved to Azerbaijan with my family, where I continue my education and personal growth.
-    <br><br>
-    I come from a close-knit family and have one brother and one sister. Growing up in different cultural environments has helped me become open-minded, resilient, and curious about the world around me.
-    <br><br>
-    Through my studies and future projects, I aim to further explore the field of computer science and build solutions that combine creativity with technology.
-  </p>
-</div>
+  <!-- QUALIFICATIONS -->
+  <section class="about-section">
+    <h2>Qualifications</h2>
+    <ul class="about-list">
+      <li><!-- Qualification 1 --></li>
+      <li><!-- Qualification 2 --></li>
+      <li><!-- Qualification 3 --></li>
+    </ul>
+  </section>
 
-<script>
-  const box = document.querySelector('.about-box');
+  <!-- ACTIVITIES & PROJECTS -->
+  <section class="about-section">
+    <h2>Activities & Experience</h2>
+    <ul class="about-list">
+      <li><!-- Activity / Project --></li>
+      <li><!-- Competition / Club / Course --></li>
+      <li><!-- Volunteering / Independent learning --></li>
+    </ul>
+  </section>
 
-  box.addEventListener('mousemove', e => {
-    const rect = box.getBoundingClientRect();
-    box.style.setProperty('--y', `${e.clientY - rect.top}px`);
-  });
-</script>
+  <!-- ACHIEVEMENTS -->
+  <section class="about-section highlight">
+    <h2>Achievements</h2>
+    <ul class="about-list">
+      <li><!-- Achievement 1 --></li>
+      <li><!-- Achievement 2 --></li>
+      <li><!-- Achievement 3 --></li>
+    </ul>
+  </section>
 
-</div>
-
-  <script src="principles.js"></script>
-</body>
-</html>
-
+</main>
