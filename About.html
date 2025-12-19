@@ -160,7 +160,9 @@
     <img src="Sevda.jpg" alt="Profile photo" class="about-pfp">
     <h1>About Me</h1>
     <p class="about-intro">
-      <!-- Short personal background (2–3 lines) -->
+      Hey! My name is Sevda Mammadova and I’m a 17-year-old Computer Science student at ADA School of IT with a strong interest in technology, creativity, and problem-solving. 
+I enjoy building digital projects that combine clean design with functional code, and I’m always excited to learn new tools and ideas.
+
     </p>
   </section>
 
@@ -168,7 +170,11 @@
   <section class="about-section">
     <h2>Background</h2>
     <p>
-      <!-- Education, where you’re from, interests -->
+      I was born in Qatar and lived there for 13 years, an experience that helped shape my multicultural perspective and adaptability. I've studied at over 8 different schools so I am very used to moving around and adapting to new environments.
+Four years ago, I moved to Azerbaijan, where I continue my education and personal growth.
+Growing up in different environments has made me open-minded, resilient, and curious about the world around me.
+
+
     </p>
   </section>
 
@@ -176,9 +182,9 @@
   <section class="about-section">
     <h2>Qualifications</h2>
     <ul class="about-list">
-      <li><!-- Qualification 1 --></li>
-      <li><!-- Qualification 2 --></li>
-      <li><!-- Qualification 3 --></li>
+      <li>Student at ADA School of IT, specializing in Computer Science  </li>
+      <li>Strong foundation in HTML, CSS, and basic JavaScript  </li>
+      <li>Experience working on individual and group projects  </li>
     </ul>
   </section>
 
@@ -186,9 +192,9 @@
   <section class="about-section">
     <h2>Activities & Experience</h2>
     <ul class="about-list">
-      <li><!-- Activity / Project --></li>
-      <li><!-- Competition / Club / Course --></li>
-      <li><!-- Volunteering / Independent learning --></li>
+      <li>I absolutely love listening to all kinds of music! My all-time favorte artist is Michael Jackson</li>
+      <li>I have attended many different clubs: Web Development, Chess, Debate CLub, etc.</li>
+      <li>I was also a part of the student council and was the Deputy head of the ADAlilar journal</li>
     </ul>
   </section>
 
@@ -196,13 +202,34 @@
   <section class="about-section highlight">
     <h2>Achievements</h2>
     <ul class="about-list">
-      <li><!-- Achievement 1 --></li>
-      <li><!-- Achievement 2 --></li>
-      <li><!-- Achievement 3 --></li>
+      <li>Received 1st place in Azerbaijan for the Pearson Edexcel English exam</li>
+      <li>Won many medals in the World Scholar's Cup</li>
+      <li>learnt intermediate Azerbaijani in under 2 years!</li>
     </ul>
   </section>
 
 </main>
+
+<footer class="footer">
+  <p>Connect with me:</p>
+  <div class="social-icons">
+    <a href="https://github.com/Adves08" target="_blank">🐱 GitHub</a>
+    <a href="https://www.codecademy.com/profiles/Adves08" target="_blank">💻 Codecademy</a>
+    <a href="https://github.com/Adves08/About-Me" target="_blank">🔗 Website Repo</a>
+  </div>
+  <p>&copy; 2025 Sevda Mammadova</p>
+</footer>
+
+ <script>
+    document.addEventListener("mousemove", e => {
+      const trail = document.createElement("div");
+      trail.classList.add("cursor-trail");
+      trail.style.left = e.clientX + "px";
+      trail.style.top = e.clientY + "px";
+      document.body.appendChild(trail);
+      setTimeout(() => trail.remove(), 800);
+    });
+  </script>
 
 <script src="principles.js"></script>
 </body>

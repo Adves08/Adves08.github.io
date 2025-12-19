@@ -153,11 +153,6 @@
   </button>
 </div>
 
-<img src="Sevda.jpg" class="pfp">
-<img src="reindeer.png" class="reindeer">
-
-
-<h1>🎀 Sevda Mammadova 🎀</h1>
 
 <main class="projects-container">
 
@@ -172,28 +167,28 @@
 
     <!-- Project Card 1 -->
     <div class="project-card">
-      <img src="project1.png" alt="Project 1 screenshot" class="project-img">
-      <h2>Project 1: [Title]</h2>
+      <img src="Project1.png" alt="Project 1 screenshot" class="project-img]">
+      <h2>Project 1: How does Hardware Work?</h2>
       <p class="project-desc">
-        [Short description of Project 1. Explain what it does, what tools you used, and any highlights.]
+        Class Project for Principles of Info Systems involving logic gates
       </p>
     </div>
 
     <!-- Project Card 2 (Hour of Code) -->
     <div class="project-card">
-      <img src="project2.png" alt="Project 2 screenshot" class="project-img">
-      <h2>Project 2: [Title]</h2>
+      <img src="mona_lisa.png" alt="Project 2 screenshot" class="project-img">
+      <h2>Project 2: Mona Lisa Hackathon</h2>
       <p class="project-desc">
-        [Description of Hour of Code project, what you learned, skills applied.]
+        Joined a Hackathon in the 11th Grade and won first place for our Italian pasta shop named Mona Lisa
       </p>
     </div>
 
     <!-- Optional Additional Project -->
     <div class="project-card">
       <img src="project3.png" alt="Project 3 screenshot" class="project-img">
-      <h2>Project 3: [Title]</h2>
+      <h2>Project 3: CodeAcademy Project</h2>
       <p class="project-desc">
-        [Optional project description, maybe independent work or competition.]
+        Very first IT-related course I've done. Scored full marks on it!
       </p>
     </div>
 
@@ -201,7 +196,26 @@
 
 </main>
 
+<footer class="footer">
+  <p>Connect with me:</p>
+  <div class="social-icons">
+    <a href="https://github.com/Adves08" target="_blank">🐱 GitHub</a>
+    <a href="https://www.codecademy.com/profiles/Adves08" target="_blank">💻 Codecademy</a>
+    <a href="https://github.com/Adves08/About-Me" target="_blank">🔗 Website Repo</a>
+  </div>
+  <p>&copy; 2025 Sevda Mammadova</p>
+</footer>
 
+ <script>
+    document.addEventListener("mousemove", e => {
+      const trail = document.createElement("div");
+      trail.classList.add("cursor-trail");
+      trail.style.left = e.clientX + "px";
+      trail.style.top = e.clientY + "px";
+      document.body.appendChild(trail);
+      setTimeout(() => trail.remove(), 800);
+    });
+  </script>
 
 
   <script src="principles.js"></script>

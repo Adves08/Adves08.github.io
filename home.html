@@ -181,6 +181,27 @@
 
 </div>
 
+<footer class="footer">
+  <p>Connect with me:</p>
+  <div class="social-icons">
+    <a href="https://github.com/Adves08" target="_blank">🐱 GitHub</a>
+    <a href="https://www.codecademy.com/profiles/Adves08" target="_blank">💻 Codecademy</a>
+    <a href="https://github.com/Adves08/About-Me" target="_blank">🔗 Website Repo</a>
+  </div>
+  <p>&copy; 2025 Sevda Mammadova</p>
+</footer>
+
+ <script>
+    document.addEventListener("mousemove", e => {
+      const trail = document.createElement("div");
+      trail.classList.add("cursor-trail");
+      trail.style.left = e.clientX + "px";
+      trail.style.top = e.clientY + "px";
+      document.body.appendChild(trail);
+      setTimeout(() => trail.remove(), 800);
+    });
+  </script>
+
   <script src="principles.js"></script>
 </body>
 </html>
